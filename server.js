@@ -31,7 +31,7 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 }
 
-app.use(express.static('app'));
+app.use(express.static('./build'));
 
 app.use('/api', users);
 
